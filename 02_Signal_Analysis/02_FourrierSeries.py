@@ -62,7 +62,7 @@ y_t = true_square = signal.square(t)
 fig = go.Figure()
 fig.add_trace(go.Scatter(x=t, y=true_square, mode="lines", name="True Square signal"))
 
-harmonics = [2, 3, 10, 20, 50]
+harmonics = [2, 3, 10, 20, 50, 250]
 
 for n in harmonics:
     n_range = np.arange(1, n+1).reshape(-1, 1)
